@@ -15,6 +15,7 @@ public class Homework_1 {
         char circl2 = ')';
         char squad1 = '[';
         char squad2 = ']';
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String str = reader.readLine();
 
@@ -22,7 +23,7 @@ public class Homework_1 {
             stack.push(str.charAt(i));
         }
 
-        for (int i = 0; i < stack.size(); i++) {
+        for (int i = 1; i < stack.size(); i++) {
             if (stack.get(i) == fig2) {
                 if (stack.get(i - 1) == fig1) {
                     stack.set(i, ' ');
