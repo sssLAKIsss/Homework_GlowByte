@@ -32,8 +32,9 @@ public class Homework_1 {
         }
 
     /**
-     * Cоздаем стек из последовательности вводимых
-     * с клавиатуры скобок
+     * СОздаем стек
+     * @return Стек , элементы которого - скобки
+     * @throws IOException
      */
     private static Stack<Character> createStack() throws IOException {
         Stack<Character> stack = new Stack<>();
